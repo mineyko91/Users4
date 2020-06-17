@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoUZnth21okKncuNilWhGKgAAAAACAAAAAAAQZgAAAAEAACAAAAC0qKB7tZVkWyYsylYeMW2ip3NW2cqLU4RpGvfGb0rN3gAAAAAOgAAAAAIAACAAAAAu4km9cMOuE135xnjO3GmeQdnkI/SnndMjYo2WakB7A4AAAACoRfdlV1OFtwmobAejvxEvZuDJCpClKJjFJD5Fc0FEEPE7MIoo3EW0M4PoZSshS3AjJHmzivUg75Xhv2ZRoSYkhHn6zsAphFvqoA6XpAaX+tBBVIa63l6UfMCS5e167yM1ruoqI6OeeQtRbkZdpBCDRcxVMHV+IZBtEMvRJdO/bkAAAADu63i8H1+aIXoJN2lxlseJoTj3CA89irQ0DfNOFaBT7pUXyg5NFnHvNWFOFSXcq5yCwIaX53WLVZXZ3ujehSeU</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Server=tcp:mineyko-server.database.windows.net,1433%3bInitial Catalog=mineyko-usersdb%3bPersist Security Info=False%3bUser ID=mineyko91%3bPassword=_prim0Kis3489277%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

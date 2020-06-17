@@ -1,0 +1,45 @@
+﻿@model _4zadanie.ViewModels.RegisterViewModel
+@{
+    ViewData["Title"] = "Register";
+
+}
+
+<div class="login">
+    <h3 class="text-center text-white pt-5">Login form</h3>
+    <div class="container">
+        <div id="login-row" class="row justify-content-center align-items-center">
+            <div id="login-column" class="col-md-6">
+                <div id="login-box" class="col-md-12">
+                    <form class="form" method="post" asp-controller="Account" asp-action="Register">
+                        <div asp-validation-summary="ModelOnly"></div>
+                        <h3 class="text-center text-dark">Registration</h3>
+                        <div class="form-group">
+                            <label asp-for="Name" class="text-dark">Username:</label><br>
+                            <input asp-for="Name" name="Name" class="form-control">
+                            <span asp-validation-for="Name"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Email" class="text-dark">Email:</label><br>
+                            <input asp-for="Email" name="Email" class="form-control">
+                            <span asp-validation-for="Email"></span>
+                        </div>
+                        <div class="form-group wrap-input100 validate-input" data-validate="Password is required">
+                            <label asp-for="Password" class="text-dark">Password:</label><br>
+                            <input asp-for="Password" type="password" class="form-control">
+                        </div>
+                        <div class="form-group wrap-input100 validate-input" data-validate="Password confimation is required">
+                            <label asp-for="PasswordConfirm" class="text-dark">Password confirm:</label><br>
+                            <input asp-for="PasswordConfirm" type="password" class="form-control">
+                        </div> <br />
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-dark btn-md" value="Submit">
+                        </div>
+                        <div id="register-link" class="text-right">
+                            <a href="~/Account/Login/" class="text-info text-dark">Login here</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
