@@ -73,7 +73,7 @@ namespace _4zadanie.Controllers
                 {
                     if (!string.IsNullOrEmpty(model.ReturnUrl) && Url.IsLocalUrl(model.ReturnUrl))
                     {
-                        User user = await _userManager.FindByEmailAsync(model.Name);
+                        User user = await _userManager.FindByNameAsync(model.Name);
 
                         user.LastLoginTime = DateTimeOffset.Now;
 
